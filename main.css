@@ -1,1 +1,80 @@
 
+html{
+	margin: 0;
+	padding: 0;
+}
+.modal{
+	box-sizing: border-box;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 500px;
+	padding: 20px 100px;
+	font-family: Roboto;
+	font-size: 20px;
+	color: #323725;
+
+	background-color: #a3be6e;
+	box-shadow: 0 30px 50px rgb(0, 0, 0.7);
+	border-radius:5px ;
+
+}
+.modal-close{
+	position: absolute;
+	top: 0px;
+	right: -40px;
+
+	width: 25px;
+	height: 25px;
+
+	font-size: 0;
+  
+	border: 0;
+	border-radius: 25px;
+	background-color: #a3be6e;
+	cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after{
+	content: "";
+
+	position: absolute;
+	top: 11px;
+	left: 3px;
+
+	width: 20px;
+	height: 3px;
+
+	background-color: #323725;
+}
+.modal-close::before{
+	transform: rotate(45deg);
+}
+.modal-close::after{
+	transform: rotate(-45deg);
+}
+.modal input{
+	font: inherit;
+	color: inherit;
+}
+.modal input[type="text"],
+.modal input[type="email"]{
+	width: 300px;
+	height: 26px;
+
+}
+.modal select{
+	box-sizing: content-box;
+	width: 300px;
+	height: 26px;
+	
+	font: inherit;
+	color: inherit;
+
+}
+.modal button[type="submit"]{
+	width: 300px;
+	height: 26px;
+}
